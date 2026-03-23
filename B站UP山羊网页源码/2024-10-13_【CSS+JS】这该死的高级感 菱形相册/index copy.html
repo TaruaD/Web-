@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山羊の前端小窝</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #dbddff;
+        }
+
+        .shell {
+            --size: 50px;
+            display: grid;
+            grid-template-columns: repeat(28, var(--size));
+            grid-auto-rows: var(--size);
+            place-items: start center;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .shell img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-45deg) scale(1.5);
+            transition: .05s;
+        }
+
+        .box {
+            width: 70px;
+            height: 70px;
+            position: relative;
+            overflow: hidden;
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-column: auto / span 2;
+            border-radius: 10px;
+            box-shadow: 5px 0 5px #00000027;
+            border: 5px solid #fff;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .box:nth-child(27n - 12) {
+            grid-column: 2 / span 2;
+        }
+
+        .shell:hover img:not(:hover) {
+            filter: brightness(0.5) contrast(0.6);
+        }
+
+
+        .box:hover {
+            transform: rotate(0) scale(1.8);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="shell">
+        <div class="box">
+            <img src="image/01.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/02.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/03.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/04.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/05.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/06.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/07.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/08.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/09.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/10.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/11.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/12.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/13.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/14.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/15.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/16.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/17.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/18.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/19.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/20.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/21.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/22.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/23.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/24.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/25.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/26.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/27.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/28.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/29.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/30.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/31.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/33.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/34.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/35.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/36.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/37.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/38.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/39.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/40.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/41.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/42.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/43.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/44.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/45.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/46.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/47.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/48.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/49.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/50.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/51.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/52.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/53.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/54.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/55.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/56.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/57.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/58.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/59.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/60.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/61.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/62.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/63.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/64.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/65.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/66.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/67.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/68.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/69.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/70.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/71.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/72.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/73.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/74.jpg" />
+        </div>  <div class="box">
+            <img src="image/01.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/02.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/03.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/04.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/05.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/06.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/07.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/08.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/09.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/10.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/11.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/12.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/13.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/14.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/15.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/16.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/17.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/18.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/19.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/20.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/21.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/22.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/23.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/24.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/25.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/26.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/27.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/28.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/29.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/30.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/31.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/33.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/34.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/35.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/36.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/37.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/38.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/39.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/40.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/41.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/42.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/43.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/44.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/45.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/46.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/47.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/48.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/49.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/50.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/51.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/52.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/53.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/54.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/55.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/56.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/57.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/58.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/59.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/60.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/61.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/62.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/63.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/64.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/65.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/66.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/67.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/68.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/69.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/70.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/71.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/72.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/73.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/74.jpg" />
+        </div>  <div class="box">
+            <img src="image/01.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/02.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/03.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/04.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/05.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/06.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/07.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/08.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/09.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/10.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/11.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/12.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/13.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/14.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/15.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/16.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/17.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/18.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/19.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/20.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/21.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/22.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/23.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/24.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/25.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/26.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/27.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/28.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/29.jpg" />
+        </div>
+        <div class="box">
+            <img src="image/30.jpg" />
+        </div> 
+    </article>
+
+
+    <script>
+        // 监听鼠标事件并更新图片位置
+        document.querySelectorAll('.box').forEach(function (wrapper) {
+            wrapper.addEventListener('mousemove', function (e) {
+                const rect = wrapper.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+
+                const img = wrapper.querySelector('img');
+                img.style.transform = `rotate(0deg) translate3d(${x * -0.5}px, ${y * -0.5}px, 0) scale(2)`;
+            });
+
+            wrapper.addEventListener('mouseleave', function () {
+                const img = wrapper.querySelector('img');
+                // 当鼠标离开时，恢复图片原来的旋转和位置
+                img.style.transform = 'rotate(-45deg) scale(1.5)';
+            });
+        });
+    </script>
+</body>
+
+</html>
