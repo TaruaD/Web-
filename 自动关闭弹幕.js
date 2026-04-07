@@ -14,8 +14,9 @@
     setTimeout(() => {
         const closedanmu = () => {
             const danmu = document.querySelector(".bui-danmaku-switch-input")
-            const danmuon = document.querySelector(".bui-danmaku-switch-on")
-            if (danmuon) {
+            const danmuON = document.querySelector(".bui-danmaku-switch-on")
+            //const danmuOFF = document.querySelector(".bui-danmaku-switch-off")
+            if (danmuON) {
                 danmu.click()
                 console.log("关闭弹幕")
                 clearInterval(sleepdanmu)
