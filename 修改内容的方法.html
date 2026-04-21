@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>点击按钮，网页元素发生变化</h1>
+    <button>按钮</button>
+    <p>hello!</p>
+    <span>文字替换</span>
+</body>
+<script>
+    document.querySelector('button').addEventListener('click', function () {
+        document.querySelector('span').textContent = `已替换文字`
+        document.querySelector("p").innerHTML = `    <ul>手机
+        <li>小米手机</li>
+        <li>苹果手机</li>
+        <li>华为手机</li>
+    </ul>`
+    })
+    //innerHTML替换元素
+    //textContent替换文字内容
+</script>
+
+</html>
