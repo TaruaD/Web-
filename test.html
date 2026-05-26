@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>t</title>
+</head>
+
+<body>
+    <button id="windowButton">打开新的标签页</button>
+    <pre id="log"></pre>
+</body>
+<script>
+    const windowButton = document.querySelector("#windowButton")
+    const log = document.querySelector("#log")
+    windowButton.addEventListener('click', () => {
+        if (window.confirm("是否跳转到老舅直播间")) {
+            window.open("https://live.bilibili.com/21669525")
+        } else {
+            log.innerHTML = '留下来'
+        }
+    })
+</script>
+
+</html>

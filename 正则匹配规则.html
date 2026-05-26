@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //字母、数字、下划线组成，以字母开头 4-16位
+        // function checkUser(str) {
+        //     var re = /^[a-zA-Z]\w{3,15}$/g
+        //     if (re.test(str)) {
+        //         return '对'
+        //     } else {
+        //         return '错'
+        //     }
+        // }
+        // console.log(checkUser('donk666'))
+
+
+        // 手机号：11位，1开头、3、5、7、8其中一位当第二位
+        // function checkMobile(str) {
+        //     var re = /^1[3578]\d{9}$/g
+        //     if (re.test(str)) {
+        //         return '对'
+        //     } else {
+        //         return '错'
+        //     }
+        // }
+        // console.log(checkMobile('135123456789999'))
+
+        //电话号码：区号+号码
+        // function checkPhone(str) {
+        //     var re = /^0\d{2,3}-?\d{7,8}$/g
+        //     if (re.test(str)) {
+        //         return '对'
+        //     } else {
+        //         return '错'
+        //     }
+        // } console.log(checkPhone('XXX'))
+
+        //匹配身份证号:18位或15位。15全是数字、18位只有前17位是数字最后一位可能是数字，也有可能是字符x或X
+        // function checkID(str) {
+        //     var re = /^(\d{15}|\d{17}[\dxX])$/
+        //     if (re.test(str)) {
+        //         return '格式正确';
+        //     } else {
+        //         return '格式错误';
+        //     }
+        // }
+        // // 测试
+        // console.log(checkID('110101199003072345')); // 18位正规身份证 -> 输出: 格式正确
+        // console.log(checkID('11010119900307234X')); // 18位带X身份证 -> 输出: 格式正确
+        // console.log(checkID('110101900307234'));   // 15位老身份证  -> 输出: 格式正确
+        // console.log(checkID('11010119900307234Z')); // 错误末尾字符   -> 输出: 格式错误
+        //匹配邮箱：XXX@xxx.com|cn|net
+        // function checkEmail(str) {
+        //     var re = /^[\w]+[@][\w]+\.(com|cn|net)$/
+        //     return re.test(str)
+        // }
+        // console.log(checkEmail('jack@company.com'));   // 输出: true
+        // console.log(checkEmail('rose@qq.cn'));         // 输出: true
+        // console.log(checkEmail('tony@163.net'));       // 输出: true
+
+        // console.log(checkEmail('alex@qq.nmet'));       // 输出: false (拼写错误)
+        // console.log(checkEmail('lucy@qq.com/html'));   // 输出: false (被 $ 成功拦截)
+    </script>
+</body>
+
+</html>
