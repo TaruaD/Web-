@@ -4,22 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>t</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
-    <button id="windowButton">打开新的标签页</button>
-    <pre id="log"></pre>
+    <a href="xxx.jpg" title="明日夨技最夦夠版...">夦闻</a>
 </body>
+
 <script>
-    const windowButton = document.querySelector("#windowButton")
-    const log = document.querySelector("#log")
-    windowButton.addEventListener('click', () => {
-        if (window.confirm("是否跳转到老舅直播间")) {
-            window.open("https://live.bilibili.com/21669525")
-        } else {
-            log.innerHTML = '留下来'
-        }
-    })
+    var text = $("a").attr("title")
+    console.log(text)
 </script>
 
 </html>
